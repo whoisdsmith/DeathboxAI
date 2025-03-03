@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DeathBox Assets</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <style>
+        body {
+            background-color: #000;
+            color: #33ff33;
+            font-family: monospace;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2 {
+            color: #33ff33;
+        }
+
+        .asset-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #33ff33;
+            background-color: #111;
+        }
+
+        .asset {
+            margin: 10px;
+            border: 1px solid #33ff33;
+            background-color: #222;
+            padding: 10px;
+        }
+
+        .instructions {
+            background-color: #111;
+            padding: 15px;
+            border: 1px solid #33ff33;
+            margin: 20px 0;
+        }
+
+        code {
+            background-color: #222;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DeathBox Assets</h1>
+
+    <div class="instructions">
+        <p>This page displays the SVG assets for the DeathBox AI project.</p>
+        <p>To save these assets:</p>
+        <ol>
+            <li>Right-click on the image and select "Save Image As..."</li>
+            <li>Save the logo as <code>logo.png</code> or <code>logo.svg</code></li>
+            <li>Save the favicon as <code>favicon.ico</code> or <code>favicon.svg</code></li>
+        </ol>
+        <p>Note: For best compatibility, you may want to convert the SVG files to PNG/ICO format using an online
+            converter.</p>
+    </div>
+
+    <div class="asset-container">
+        <h2>Logo (32x32)</h2>
+        <div class="asset">
+            <img src="logo.svg" width="32" height="32" alt="Logo">
+        </div>
+        <p>SVG Source: <code>logo.svg</code></p>
+    </div>
+
+    <div class="asset-container">
+        <h2>Favicon (16x16)</h2>
+        <div class="asset">
+            <img src="favicon.svg" width="16" height="16" alt="Favicon">
+        </div>
+        <p>SVG Source: <code>favicon.svg</code></p>
+    </div>
+
+    <div class="instructions">
+        <h3>Using these assets in your project:</h3>
+        <p>For the favicon, add this to your HTML head:</p>
+        <pre><code>&lt;link rel="icon" href="favicon.svg" type="image/svg+xml"&gt;
+&lt;link rel="alternate icon" href="favicon.ico" type="image/png" sizes="16x16"&gt;</code></pre>
+
+        <p>For the logo, you can use it in your HTML like this:</p>
+        <pre><code>&lt;img src="logo.svg" alt="DeathBox Logo" width="32" height="32"&gt;</code></pre>
+    </div>
+</body>
+
+</html>
