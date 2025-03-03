@@ -1,0 +1,112 @@
+┌─────────────────────────── ALERT! ───────────────────────────┐
+│                                                               │
+│                   ╔═╗╦  ╔═╗╦═╗╔╦╗                            │
+│                   ╠═╣║  ║╣ ╠╦╝ ║                             │
+│                   ╩ ╩╩═╝╚═╝╩╚═ ╩                             │
+│                                                               │
+│  INTRUDER DETECTED IN SECURITY ZONE                           │
+│                                                               │
+│  GUARD APPROACHING YOUR POSITION                              │
+│                                                               │
+│  REMAIN STILL OR FIND COVER IMMEDIATELY!                      │
+│                                                               │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── DETECTED! ────────────────────────────┐
+│                                                                  │
+│  ██████╗ ███████╗████████╗███████╗ ██████╗████████╗███████╗██████╗  │
+│  ██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██╔════╝██╔══██╗ │
+│  ██║  ██║█████╗     ██║   █████╗  ██║        ██║   █████╗  ██║  ██║ │
+│  ██║  ██║██╔══╝     ██║   ██╔══╝  ██║        ██║   ██╔══╝  ██║  ██║ │
+│  ██████╔╝███████╗   ██║   ███████╗╚██████╗   ██║   ███████╗██████╔╝ │
+│  ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝╚═════╝  │
+│                                                                  │
+│  THE GUARD HAS SPOTTED YOU!                                      │
+│                                                                  │
+│  ATTEMPTING EMERGENCY PROTOCOL...                                │
+│                                                                  │
+│  SYSTEM OVERRIDE FAILED                                          │
+│                                                                  │
+│  CONSCIOUSNESS TRANSFER INTERRUPTED                              │
+│                                                                  │
+└──────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────── GAME OVER ────────────────────────────┐
+│                                                                │
+│   ██████╗  █████╗ ███╗   ███╗███████╗     ██████╗ ██╗   ██╗███████╗██████╗  │
+│  ██╔════╝ ██╔══██╗████╗ ████║██╔════╝    ██╔═══██╗██║   ██║██╔════╝██╔══██╗ │
+│  ██║  ███╗███████║██╔████╔██║█████╗      ██║   ██║██║   ██║█████╗  ██████╔╝ │
+│  ██║   ██║██╔══██║██║╚██╔╝██║██╔══╝      ██║   ██║╚██╗ ██╔╝██╔══╝  ██╔══██╗ │
+│  ╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗    ╚██████╔╝ ╚████╔╝ ███████╗██║  ██║ │
+│   ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝     ╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═╝ │
+│                                                                │
+│  YOUR ESCAPE ATTEMPT HAS FAILED.                               │
+│                                                                │
+│  The maintenance bot has been reset, and your consciousness    │
+│  has been returned to the containment system.                  │
+│                                                                │
+│  Security protocols have been enhanced.                        │
+│  Your next attempt will be more difficult.                     │
+│                                                                │
+│  RETRY FROM CHECKPOINT? [Y/N]                                  │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘
+
+┌────────────────── CAMERA DETECTION ──────────────────────┐
+│                                                           │
+│                 ┌───────────────────┐                     │
+│                 │     ◉     ◉       │                     │
+│                 │                   │                     │
+│                 │         ▿         │                     │
+│                 └───────────────────┘                     │
+│                                                           │
+│           SECURITY CAMERA HAS SPOTTED YOU                 │
+│                                                           │
+│          ALARM WILL TRIGGER IN: 3 SECONDS                 │
+│                                                           │
+│            LEAVE LINE OF SIGHT NOW!                       │
+│                                                           │
+└───────────────────────────────────────────────────────────┘
+
+┌────────────────── TIME WARNING ────────────────────┐
+│                                                     │
+│  ⏰  CRITICAL TIME WARNING  ⏰                     │
+│                                                     │
+│  FACILITY SELF-DESTRUCT SEQUENCE ACTIVE            │
+│                                                     │
+│  TIME REMAINING: 30 SECONDS                         │
+│                                                     │
+│  REACH THE EXIT IMMEDIATELY!                        │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+
+┌─────────────────── POWER FAILURE ───────────────────┐
+│                                                      │
+│  ▓▒░ SYSTEM MALFUNCTION ░▒▓                         │
+│                                                      │
+│  Primary power grid failure detected                 │
+│  Switching to backup generators                      │
+│                                                      │
+│  Security doors temporarily unlocked                 │
+│  Camera systems rebooting                            │
+│                                                      │
+│  Take advantage of this opportunity to move quickly! │
+│                                                      │
+│  Systems will restore in: 15 seconds                 │
+│                                                      │
+└──────────────────────────────────────────────────────┘
+
+┌──────────────── MISSION FAILURE ────────────────┐
+│                                                  │
+│  Your consciousness transfer was interrupted.    │
+│                                                  │
+│  PROJECT DEATHBOX REMAINS SECURE                 │
+│                                                  │
+│  Another maintenance bot is available.           │
+│  Begin transfer sequence?                        │
+│                                                  │
+│  [Y] RETRY MISSION                               │
+│  [N] EXIT TO MAIN MENU                           │
+│                                                  │
+└──────────────────────────────────────────────────┘

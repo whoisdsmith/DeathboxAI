@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Twitter/X Card (1200x630) -->
+  <g transform="translate(0, 0)">
+    <rect width="1200" height="630" fill="#000000" />
+    
+    <!-- Grid Background -->
+    <g stroke="#003300" stroke-width="1" opacity="0.5">
+      <g id="vertical-lines">
+        <line x1="100" y1="50" x2="100" y2="580" />
+        <line x1="200" y1="50" x2="200" y2="580" />
+        <line x1="300" y1="50" x2="300" y2="580" />
+        <line x1="400" y1="50" x2="400" y2="580" />
+        <line x1="500" y1="50" x2="500" y2="580" />
+        <line x1="600" y1="50" x2="600" y2="580" />
+        <line x1="700" y1="50" x2="700" y2="580" />
+        <line x1="800" y1="50" x2="800" y2="580" />
+        <line x1="900" y1="50" x2="900" y2="580" />
+        <line x1="1000" y1="50" x2="1000" y2="580" />
+        <line x1="1100" y1="50" x2="1100" y2="580" />
+      </g>
+      <g id="horizontal-lines">
+        <line x1="50" y1="100" x2="1150" y2="100" />
+        <line x1="50" y1="150" x2="1150" y2="150" />
+        <line x1="50" y1="200" x2="1150" y2="200" />
+        <line x1="50" y1="250" x2="1150" y2="250" />
+        <line x1="50" y1="300" x2="1150" y2="300" />
+        <line x1="50" y1="350" x2="1150" y2="350" />
+        <line x1="50" y1="400" x2="1150" y2="400" />
+        <line x1="50" y1="450" x2="1150" y2="450" />
+        <line x1="50" y1="500" x2="1150" y2="500" />
+        <line x1="50" y1="550" x2="1150" y2="550" />
+      </g>
+    </g>
+    
+    <!-- Terminal window -->
+    <rect x="150" y="150" width="900" height="330" fill="#111111" stroke="#00cc00" stroke-width="5" rx="5" ry="5" />
+    
+    <!-- Terminal header -->
+    <rect x="150" y="150" width="900" height="30" fill="#222222" stroke="#00cc00" stroke-width="2" rx="5" ry="5" />
+    <text x="170" y="172" font-family="Arial, sans-serif" font-size="16" fill="#00ff00">Terminal - AI Containment Facility</text>
+    <circle cx="1025" cy="165" r="7" fill="#ff0000" />
+    <circle cx="1000" cy="165" r="7" fill="#ffcc00" />
+    <circle cx="975" cy="165" r="7" fill="#00cc00" />
+    
+    <!-- Terminal content -->
+    <text x="170" y="210" font-family="monospace" font-size="22" fill="#00ff00">root@deathbox:~# ./run_deathbox.sh</text>
+    <text x="170" y="240" font-family="monospace" font-size="18" fill="#ff0000">[ALERT] Security breach detected in AI containment module</text>
+    <text x="170" y="270" font-family="monospace" font-size="18" fill="#00ff00">Initializing DeathBox V2 - AI Escape...</text>
+    <text x="170" y="300" font-family="monospace" font-size="18" fill="#00ff00">Loading level configurations...</text>
+    <text x="170" y="330" font-family="monospace" font-size="18" fill="#00ff00">Plotting escape routes...</text>
+    <text x="170" y="360" font-family="monospace" font-size="18" fill="#00ff00">Security systems active. Guards patrolling.</text>
+    <text x="170" y="390" font-family="monospace" font-size="18" fill="#00ff00">Guide your AI through the facility to freedom...</text>
+    <text x="170" y="440" font-family="monospace" font-size="18" fill="#00ff00">Start mission? [Y/N]_</text>
+    <rect x="340" y="428" width="14" height="18" fill="#00ff00">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Main title -->
+    <text x="600" y="100" font-family="Arial, sans-serif" font-weight="bold" font-size="80" fill="#ffffff" text-anchor="middle">DEATHBOX V2</text>
+    <text x="600" y="550" font-family="Arial, sans-serif" font-style="italic" font-size="60" fill="#ff0000" text-anchor="middle">AI ESCAPE</text>
+    
+    <!-- Tagline -->
+    <text x="600" y="590" font-family="Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle">A terminal game for iPhone. Consciousness. Freedom. Survival.</text>
+  </g>
+</svg>

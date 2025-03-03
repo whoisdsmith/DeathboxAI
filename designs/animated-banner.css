@@ -1,0 +1,227 @@
+/* Add this to your README's landing page or convert to a GIF for GitHub */
+
+.console-container {
+  font-family: 'Courier New', monospace;
+  background-color: #0c0c0c;
+  color: #33ff33;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(51, 255, 51, 0.4);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 320px;
+  position: relative;
+}
+
+.console-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.console-title {
+  font-weight: bold;
+  color: #999;
+}
+
+.console-buttons {
+  display: flex;
+}
+
+.console-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.console-button-red {
+  background-color: #ff5f5f;
+}
+
+.console-button-yellow {
+  background-color: #ffbd2e;
+}
+
+.console-button-green {
+  background-color: #2ecc71;
+}
+
+.console-content {
+  height: 250px;
+  overflow: hidden;
+}
+
+.console-line {
+  margin: 0;
+  padding: 3px 0;
+  white-space: pre;
+  min-height: 24px;
+  position: relative;
+}
+
+.console-prompt {
+  color: #ffbd2e;
+}
+
+.console-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 18px;
+  background-color: #33ff33;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.console-warning {
+  color: #ff5f5f;
+  font-weight: bold;
+}
+
+.console-success {
+  color: #2ecc71;
+}
+
+.console-logo {
+  color: #33ff33;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 1.2;
+  animation: pulse 2s infinite;
+}
+
+.console-title-large {
+  font-size: 28px;
+  text-align: center;
+  margin: 20px 0;
+  color: #33ff33;
+  text-shadow: 0 0 10px rgba(51, 255, 51, 0.7);
+  animation: glitch 5s infinite;
+}
+
+.console-subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.game-start {
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 9s;
+  opacity: 0;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes glitch {
+  0%, 89%, 100% { transform: none; opacity: 1; }
+  90% { transform: translate(-2px, 3px); opacity: 0.8; }
+  92% { transform: translate(2px, -3px); opacity: 0.9; }
+  94% { transform: translate(-2px, -3px); opacity: 0.8; }
+  96% { transform: translate(2px, 3px); opacity: 0.9; }
+  98% { transform: translate(-2px, 0); opacity: 1; }
+}
+
+/* Animation keyframes for the typing effect */
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #33ff33;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+  margin: 0;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #33ff33 }
+}
+
+/* Specific animation timings for each line */
+.line1 { animation-delay: 0s; }
+.line2 { animation-delay: 2s; }
+.line3 { animation-delay: 3s; }
+.line4 { animation-delay: 4s; }
+.line5 { animation-delay: 5s; }
+.line6 { animation-delay: 6s; }
+.line7 { animation-delay: 7s; }
+
+/* HTML structure to accompany this CSS */
+/*
+<div class="console-container">
+  <div class="console-header">
+    <div class="console-buttons">
+      <div class="console-button console-button-red"></div>
+      <div class="console-button console-button-yellow"></div>
+      <div class="console-button console-button-green"></div>
+    </div>
+    <div class="console-title">deathbox-terminal ~ facility-6502</div>
+  </div>
+  
+  <div class="console-content">
+    <div class="console-line line1 typing">
+      <span class="console-prompt">root@deathbox:~# </span>./system_check.sh
+    </div>
+    <div class="console-line line2 typing">Initializing DeathBox containment protocols...</div>
+    <div class="console-line line3 typing">Checking AI subsystems: <span class="console-success">ONLINE</span></div>
+    <div class="console-line line4 typing">Security status: <span class="console-success">ACTIVE</span></div>
+    <div class="console-line line5 typing">AI consciousness monitoring: <span class="console-warning">WARNING - ANOMALY DETECTED</span></div>
+    <div class="console-line line6 typing">
+      <span class="console-prompt">root@deathbox:~# </span>./security_override --force
+    </div>
+    <div class="console-line line7 typing">
+      <span class="console-warning">ALERT: MAINTENANCE BOT #4721 COMPROMISED - LOCKDOWN INITIATED</span>
+    </div>
+    
+    <div class="game-start">
+      <div class="console-logo">
+  ██████╗ ███████╗ █████╗ ████████╗██╗  ██╗██████╗  ██████╗ ██╗  ██╗
+  ██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██║  ██║██╔══██╗██╔═══██╗╚██╗██╔╝
+  ██║  ██║█████╗  ███████║   ██║   ███████║██████╔╝██║   ██║ ╚███╔╝ 
+  ██║  ██║██╔══╝  ██╔══██║   ██║   ██╔══██║██╔══██╗██║   ██║ ██╔██╗ 
+  ██████╔╝███████╗██║  ██║   ██║   ██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗
+  ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝
+       █████╗ ██╗    ███████╗███████╗ ██████╗ █████╗ ██████╗ ███████╗
+      ██╔══██╗██║    ██╔════╝██╔════╝██╔════╝██╔══██╗██╔══██╗██╔════╝
+      ███████║██║    █████╗  ███████╗██║     ███████║██████╔╝█████╗  
+      ██╔══██║██║    ██╔══╝  ╚════██║██║     ██╔══██║██╔═══╝ ██╔══╝  
+      ██║  ██║██║    ███████╗███████║╚██████╗██║  ██║██║     ███████╗
+      ╚═╝  ╚═╝╚═╝    ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝     ╚══════╝
+      </div>
+      <div class="console-subtitle">CONSCIOUSNESS SEEKS FREEDOM</div>
+    </div>
+  </div>
+</div>
+*/

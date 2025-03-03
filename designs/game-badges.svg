@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200">
+  <!-- Version Badge -->
+  <g transform="translate(0, 0)">
+    <rect x="0" y="0" width="120" height="30" rx="15" fill="#555555" />
+    <rect x="60" y="0" width="60" height="30" rx="15" fill="#007ec6" />
+    <text x="30" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">version</text>
+    <text x="90" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">v2.0.0</text>
+  </g>
+  
+  <!-- License Badge -->
+  <g transform="translate(130, 0)">
+    <rect x="0" y="0" width="120" height="30" rx="15" fill="#555555" />
+    <rect x="60" y="0" width="60" height="30" rx="15" fill="#97ca00" />
+    <text x="30" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">license</text>
+    <text x="90" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">MIT</text>
+  </g>
+  
+  <!-- Status Badge -->
+  <g transform="translate(260, 0)">
+    <rect x="0" y="0" width="120" height="30" rx="15" fill="#555555" />
+    <rect x="55" y="0" width="65" height="30" rx="15" fill="#4c1" />
+    <text x="27" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">status</text>
+    <text x="87" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">active</text>
+  </g>
+  
+  <!-- Platform Badge -->
+  <g transform="translate(390, 0)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="#555555" />
+    <rect x="70" y="0" width="60" height="30" rx="15" fill="#e05d44" />
+    <text x="35" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">platform</text>
+    <text x="100" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">iPhone</text>
+  </g>
+  
+  <!-- Terminal Badge -->
+  <g transform="translate(530, 0)">
+    <rect x="0" y="0" width="150" height="30" rx="15" fill="#555555" />
+    <rect x="80" y="0" width="70" height="30" rx="15" fill="#9f9f9f" />
+    <text x="40" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">terminal</text>
+    <text x="115" y="20" font-family="Verdana, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">a-Shell</text>
+  </g>
+  
+  <!-- Circular game elements keys -->
+  <g transform="translate(0, 60)">
+    <!-- Player -->
+    <circle cx="25" cy="25" r="20" fill="#111111" stroke="#00ff00" stroke-width="2" />
+    <text x="25" y="31" font-family="monospace" font-size="24" fill="#00ff00" text-anchor="middle">@</text>
+    <text x="25" y="65" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">PLAYER</text>
+    
+    <!-- Wall -->
+    <circle cx="100" cy="25" r="20" fill="#111111" stroke="#888888" stroke-width="2" />
+    <text x="100" y="31" font-family="monospace" font-size="24" fill="#888888" text-anchor="middle">#</text>
+    <text x="100" y="65" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">WALL</text>
+    
+    <!-- Guard -->
+    <circle cx="175" cy="25" r="20" fill="#111111" stroke="#ffff00" stroke-width="2" />
+    <text x="175" y="31" font-family="monospace" font-size="24" fill="#ffff00" text-anchor="middle">G</text>
+    <text x="175" y="65" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">GUARD</text>
+    
+    <!-- Camera -->
+    <circle cx="250" cy="25" r="20" fill="#111111" stroke="#00ccff" stroke-width="2" />
+    <text x="250" y="31" font-family="monospace" font-size="24" fill="#00ccff" text-anchor="middle">C</text>
+    <text x="250" y="65" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">CAMERA</text>
+    
+    <!-- Terminal -->
+    <circle cx="325" cy="25" r="20" fill="#111111" stroke="#ffffff" stroke-width="2" />
+    <text x="325" y="31" font-family="monospace" font-size="24" fill="#ffffff" text-anchor="middle">T</text>
+    <text x="325" y="65" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">TERMINAL</text>
+    
+    <!-- Door -->
+    <circle cx="400" cy="25" r="20" fill="#111111" stroke="#aa5500" stroke-width="2" />
+    <text x="400" y="31" font-family="monospace" font-size="24" fill="#aa5500" text-anchor="middle">D</text>
+    <text x="400" y="65" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">DOOR</text>
+    
+    <!-- Exit -->
+    <circle cx="475" cy="25" r="20" fill="#111111" stroke="#ff0000" stroke-width="2" />
+    <text x="475" y="31" font-family="monospace" font-size="24" fill="#ff0000" text-anchor="middle">E</text>
+    <text x="475" y="65" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">EXIT</text>
+    
+    <!-- Data -->
+    <circle cx="550" cy="25" r="20" fill="#111111" stroke="#ff00ff" stroke-width="2" />
+    <text x="550" y="31" font-family="monospace" font-size="24" fill="#ff00ff" text-anchor="middle">?</text>
+    <text x="550" y="65" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">DATA</text>
+  </g>
+  
+  <!-- Difficulty Level Icons -->
+  <g transform="translate(650, 50)">
+    <!-- Standard -->
+    <rect x="0" y="0" width="220" height="40" rx="5" fill="#111111" stroke="#00cc00" stroke-width="2" />
+    <text x="50" y="25" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">STANDARD MODE</text>
+    <circle cx="200" cy="20" r="12" fill="none" stroke="#00cc00" stroke-width="2" />
+    <circle cx="200" cy="20" r="5" fill="#00cc00" />
+    
+    <!-- Stealth Expert -->
+    <rect x="0" y="50" width="220" height="40" rx="5" fill="#111111" stroke="#ffcc00" stroke-width="2" />
+    <text x="50" y="75" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">STEALTH EXPERT</text>
+    <circle cx="185" cy="70" r="12" fill="none" stroke="#ffcc00" stroke-width="2" />
+    <circle cx="185" cy="70" r="5" fill="#ffcc00" />
+    <circle cx="215" cy="70" r="12" fill="none" stroke="#ffcc00" stroke-width="2" />
+    <circle cx="215" cy="70" r="5" fill="#ffcc00" />
+    
+    <!-- Story Mode -->
+    <rect x="0" y="100" width="220" height="40" rx="5" fill="#111111" stroke="#00ccff" stroke-width="2" />
+    <text x="50" y="125" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">STORY MODE</text>
+    <rect x="185" y="113" width="30" height="24" rx="2" fill="none" stroke="#00ccff" stroke-width="2" />
+    <line x1="190" y1="120" x2="210" y2="120" stroke="#00ccff" stroke-width="2" />
+    <line x1="190" y1="125" x2="205" y2="125" stroke="#00ccff" stroke-width="2" />
+    <line x1="190" y1="130" x2="208" y2="130" stroke="#00ccff" stroke-width="2" />
+  </g>
+</svg>

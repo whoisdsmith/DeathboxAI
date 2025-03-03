@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#000000" />
+  
+  <!-- Grid pattern -->
+  <pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#003300" stroke-width="0.5"/>
+  </pattern>
+  <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+    <rect width="100" height="100" fill="url(#smallGrid)"/>
+    <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#006600" stroke-width="1"/>
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)" opacity="0.3"/>
+  
+  <!-- Page title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="#ffffff" text-anchor="middle">DEATHBOX V2: PLAYER STRATEGY GUIDE</text>
+  
+  <!-- Card 1: Basic Strategy -->
+  <g transform="translate(200, 150)">
+    <rect x="-160" y="-80" width="320" height="160" rx="10" ry="10" fill="#111111" stroke="#00ff00" stroke-width="2" />
+    <text x="0" y="-60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#00ff00" text-anchor="middle">BASIC NAVIGATION STRATEGY</text>
+    <line x1="-140" y1="-45" x2="140" y2="-45" stroke="#00ff00" stroke-width="1" />
+    
+    <text x="-140" y="-25" font-family="monospace" font-size="12" fill="#ffffff">1. Plan your route before moving</text>
+    <text x="-140" y="-5" font-family="monospace" font-size="12" fill="#ffffff">2. Note guard patrol patterns</text>
+    <text x="-140" y="15" font-family="monospace" font-size="12" fill="#ffffff">3. Move when guards face away from you</text>
+    <text x="-140" y="35" font-family="monospace" font-size="12" fill="#ffffff">4. Stay out of camera line of sight</text>
+    <text x="-140" y="55" font-family="monospace" font-size="12" fill="#ffffff">5. Use terminals to save progress</text>
+    
+    <!-- Icon -->
+    <circle cx="120" cy="15" r="30" fill="none" stroke="#00ff00" stroke-width="2" />
+    <text x="120" y="22" font-family="monospace" font-size="30" fill="#00ff00" text-anchor="middle">@</text>
+  </g>
+  
+  <!-- Card 2: Terminal Hacking -->
+  <g transform="translate(600, 150)">
+    <rect x="-160" y="-80" width="320" height="160" rx="10" ry="10" fill="#111111" stroke="#00ccff" stroke-width="2" />
+    <text x="0" y="-60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#00ccff" text-anchor="middle">TERMINAL HACKING TIPS</text>
+    <line x1="-140" y1="-45" x2="140" y2="-45" stroke="#00ccff" stroke-width="1" />
+    
+    <text x="-140" y="-25" font-family="monospace" font-size="12" fill="#ffffff">1. Most passwords found in data fragments</text>
+    <text x="-140" y="-5" font-family="monospace" font-size="12" fill="#ffffff">2. Try "admin", "security", "override"</text>
+    <text x="-140" y="15" font-family="monospace" font-size="12" fill="#ffffff">3. Access logs for clues and codes</text>
+    <text x="-140" y="35" font-family="monospace" font-size="12" fill="#ffffff">4. Security terminals control cameras</text>
+    <text x="-140" y="55" font-family="monospace" font-size="12" fill="#ffffff">5. Remember to save your progress</text>
+    
+    <!-- Icon -->
+    <rect x="90" y="-15" width="60" height="40" fill="none" stroke="#00ccff" stroke-width="2" />
+    <text x="120" y="0" font-family="monospace" font-size="12" fill="#00ccff" text-anchor="middle">LOGIN:</text>
+    <text x="120" y="15" font-family="monospace" font-size="12" fill="#00ccff" text-anchor="middle">_</text>
+  </g>
+  
+  <!-- Card 3: Avoiding Guards -->
+  <g transform="translate(200, 350)">
+    <rect x="-160" y="-80" width="320" height="160" rx="10" ry="10" fill="#111111" stroke="#ffff00" stroke-width="2" />
+    <text x="0" y="-60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffff00" text-anchor="middle">GUARD AVOIDANCE</text>
+    <line x1="-140" y1="-45" x2="140" y2="-45" stroke="#ffff00" stroke-width="1" />
+    
+    <text x="-140" y="-25" font-family="monospace" font-size="12" fill="#ffffff">1. Guards follow fixed patrol routes</text>
+    <text x="-140" y="-5" font-family="monospace" font-size="12" fill="#ffffff">2. Detection range: 3 spaces ahead</text>
+    <text x="-140" y="15" font-family="monospace" font-size="12" fill="#ffffff">3. Guards pause at patrol endpoints</text>
+    <text x="-140" y="35" font-family="monospace" font-size="12" fill="#ffffff">4. Some terminals can distract guards</text>
+    <text x="-140" y="55" font-family="monospace" font-size="12" fill="#ffffff">5. Power outages temporarily blind guards</text>
+    
+    <!-- Icon -->
+    <text x="120" y="22" font-family="monospace" font-size="30" fill="#ffff00" text-anchor="middle">G</text>
+    <circle cx="120" cy="15" r="35" fill="none" stroke="#ffff00" stroke-width="2" stroke-dasharray="5,3" />
+  </g>
+  
+  <!-- Card 4: Camera Systems -->
+  <g transform="translate(600, 350)">
+    <rect x="-160" y="-80" width="320" height="160" rx="10" ry="10" fill="#111111" stroke="#ff3333" stroke-width="2" />
+    <text x="0" y="-60" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff3333" text-anchor="middle">CAMERA SYSTEMS</text>
+    <line x1="-140" y1="-45" x2="140" y2="-45" stroke="#ff3333" stroke-width="1" />
+    
+    <text x="-140" y="-25" font-family="monospace" font-size="12" fill="#ffffff">1. Cameras sweep in 90° arcs</text>
+    <text x="-140" y="-5" font-family="monospace" font-size="12" fill="#ffffff">2. Red light means camera is active</text>
+    <text x="-140" y="15" font-family="monospace" font-size="12" fill="#ffffff">3. 3-second delay before alarm triggers</text>
+    <text x="-140" y="35" font-family="monospace" font-size="12" fill="#ffffff">4. Hack terminals to disable cameras</text>
+    <text x="-140" y="55" font-family="monospace" font-size="12" fill="#ffffff">5. Power nodes can be shorted to disable</text>
+    
+    <!-- Icon -->
+    <text x="120" y="22" font-family="monospace" font-size="24" fill="#ff3333" text-anchor="middle">C</text>
+    <path d="M 120 15 L 145 0 L 145 30 Z" fill="none" stroke="#ff3333" stroke-width="2" />
+  </g>
+  
+  <!-- Card 5: Doors and Access -->
+  <g transform="translate(200, 520)">
+    <rect x="-160" y="-60" width="320" height="120" rx="10" ry="10" fill="#111111" stroke="#aa5500" stroke-width="2" />
+    <text x="0" y="-40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#aa5500" text-anchor="middle">DOOR ACCESS</text>
+    <line x1="-140" y1="-25" x2="140" y2="-25" stroke="#aa5500" stroke-width="1" />
+    
+    <text x="-140" y="-5" font-family="monospace" font-size="12" fill="#ffffff">1. Red indicator = Locked door</text>
+    <text x="-140" y="15" font-family="monospace" font-size="12" fill="#ffffff">2. Green indicator = Unlocked door</text>
+    <text x="-140" y="35" font-family="monospace" font-size="12" fill="#ffffff">3. Use terminals to unlock facility doors</text>
+    
+    <!-- Icon -->
+    <rect x="80" y="-20" width="40" height="60" fill="none" stroke="#aa5500" stroke-width="2" />
+    <circle cx="110" cy="10" r="5" fill="#aa5500" />
+  </g>
+  
+  <!-- Card 6: Data Collection -->
+  <g transform="translate(600, 520)">
+    <rect x="-160" y="-60" width="320" height="120" rx="10" ry="10" fill="#111111" stroke="#ff00ff" stroke-width="2" />
+    <text x="0" y="-40" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff00ff" text-anchor="middle">DATA FRAGMENTS</text>
+    <line x1="-140" y1="-25" x2="140" y2="-25" stroke="#ff00ff" stroke-width="1" />
+    
+    <text x="-140" y="-5" font-family="monospace" font-size="12" fill="#ffffff">1. Collect all fragments to reveal story</text>
+    <text x="-140" y="15" font-family="monospace" font-size="12" fill="#ffffff">2. Some contain terminal passwords</text>
+    <text x="-140" y="35" font-family="monospace" font-size="12" fill="#ffffff">3. Final fragment reveals the truth</text>
+    
+    <!-- Icon -->
+    <text x="110" y="17" font-family="monospace" font-size="24" fill="#ff00ff" text-anchor="middle">?</text>
+    <circle cx="110" cy="10" r="20" fill="none" stroke="#ff00ff" stroke-width="2" />
+  </g>
+</svg>

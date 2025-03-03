@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DeathBox Asset Generator</title>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: monospace;
+            color: #33ff33;
+        }
+
+        canvas {
+            border: 1px solid #33ff33;
+            margin: 20px;
+        }
+
+        .instructions {
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #000;
+            color: #33ff33;
+            border: 1px solid #33ff33;
+            padding: 10px 20px;
+            font-family: monospace;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #33ff33;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DeathBox Asset Generator</h1>
+
+    <div class="instructions">
+        <p>This page generates a favicon and logo for the DeathBox AI project.</p>
+        <p>Right-click on each canvas and select "Save Image As..." to save the files.</p>
+        <p>Save the 32x32 image as "logo.png" and the 16x16 image as "favicon.ico" (change the extension).</p>
+    </div>
+
+    <div>
+        <h2>Logo (32x32)</h2>
+        <canvas id="logoCanvas" width="32" height="32"></canvas>
+        <button onclick="downloadLogo()">Download Logo</button>
+    </div>
+
+    <div>
+        <h2>Favicon (16x16)</h2>
+        <canvas id="faviconCanvas" width="16" height="16"></canvas>
+        <button onclick="downloadFavicon()">Download Favicon</button>
+    </div>
+
+    <script>
+        // Function to draw the DeathBox logo
+        function drawLogo(canvas, size) {
+            const ctx = canvas.getContext('2d');
+
+            // Background
+            ctx.fillStyle = '#000000';
+            ctx.fillRect(0, 0, size, size);
+
+            // Border
+            ctx.strokeStyle = '#33ff33';
+            ctx.lineWidth = Math.max(1, size / 16);
+            ctx.strokeRect(ctx.lineWidth / 2, ctx.lineWidth / 2, size - ctx.lineWidth, size - ctx.lineWidth);
+
+            // "DB" text
+            ctx.fillStyle = '#33ff33';
+            ctx.font = `bold ${size * 0.5}px monospace`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('DB', size / 2, size / 2);
+
+            // Add some terminal-like details
+            const dotSize = Math.max(1, size / 16);
+
+            // Top-left dot
+            ctx.beginPath();
+            ctx.arc(size * 0.25, size * 0.25, dotSize, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Bottom-right dot
+            ctx.beginPath();
+            ctx.arc(size * 0.75, size * 0.75, dotSize, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        // Draw the logo and favicon
+        const logoCanvas = document.getElementById('logoCanvas');
+        const faviconCanvas = document.getElementById('faviconCanvas');
+
+        drawLogo(logoCanvas, 32);
+        drawLogo(faviconCanvas, 16);
+
+        // Download functions
+        function downloadLogo() {
+            const link = document.createElement('a');
+            link.download = 'logo.png';
+            link.href = logoCanvas.toDataURL('image/png');
+            link.click();
+        }
+
+        function downloadFavicon() {
+            const link = document.createElement('a');
+            link.download = 'favicon.ico';
+            link.href = faviconCanvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+
+</html>

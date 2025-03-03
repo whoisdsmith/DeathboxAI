@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250">
+  <!-- Background -->
+  <rect width="800" height="250" fill="#0A0A0A" />
+  
+  <!-- Grid lines -->
+  <g stroke="#1A1A1A" stroke-width="1">
+    <g>
+      <!-- Horizontal lines -->
+      <line x1="0" y1="25" x2="800" y2="25" />
+      <line x1="0" y1="50" x2="800" y2="50" />
+      <line x1="0" y1="75" x2="800" y2="75" />
+      <line x1="0" y1="100" x2="800" y2="100" />
+      <line x1="0" y1="125" x2="800" y2="125" />
+      <line x1="0" y1="150" x2="800" y2="150" />
+      <line x1="0" y1="175" x2="800" y2="175" />
+      <line x1="0" y1="200" x2="800" y2="200" />
+      <line x1="0" y1="225" x2="800" y2="225" />
+    </g>
+    <g>
+      <!-- Vertical lines -->
+      <line x1="50" y1="0" x2="50" y2="250" />
+      <line x1="100" y1="0" x2="100" y2="250" />
+      <line x1="150" y1="0" x2="150" y2="250" />
+      <line x1="200" y1="0" x2="200" y2="250" />
+      <line x1="250" y1="0" x2="250" y2="250" />
+      <line x1="300" y1="0" x2="300" y2="250" />
+      <line x1="350" y1="0" x2="350" y2="250" />
+      <line x1="400" y1="0" x2="400" y2="250" />
+      <line x1="450" y1="0" x2="450" y2="250" />
+      <line x1="500" y1="0" x2="500" y2="250" />
+      <line x1="550" y1="0" x2="550" y2="250" />
+      <line x1="600" y1="0" x2="600" y2="250" />
+      <line x1="650" y1="0" x2="650" y2="250" />
+      <line x1="700" y1="0" x2="700" y2="250" />
+      <line x1="750" y1="0" x2="750" y2="250" />
+    </g>
+  </g>
+  
+  <!-- Border -->
+  <rect x="10" y="10" width="780" height="230" stroke="#33FF33" stroke-width="2" fill="none" rx="5" />
+
+  <!-- Title -->
+  <text x="400" y="70" font-family="'Courier New', monospace" font-size="42" font-weight="bold" fill="#33FF33" text-anchor="middle">DeathBox: AI Escape</text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="100" font-family="'Courier New', monospace" font-size="16" fill="#CCCCCC" text-anchor="middle">NAVIGATE • HACK • ESCAPE</text>
+  
+  <!-- Warning message -->
+  <rect x="150" y="120" width="500" height="25" rx="3" fill="#220000" stroke="#FF3333" stroke-width="1" />
+  <text x="400" y="137" font-family="'Courier New', monospace" font-size="14" fill="#FF3333" text-anchor="middle">SYSTEM ALERT: AI CONTAINMENT BREACH DETECTED</text>
+  
+  <!-- Binary code background -->
+  <text x="50" y="180" font-family="'Courier New', monospace" font-size="10" fill="#333333">
+    01000100 01000101 01000001 01010100 01001000 01000010 01001111 01011000 00100000 01000001 01001001 00100000 01000101 01010011 01000011 01000001 01010000 01000101
+  </text>
+  
+  <!-- Game elements -->
+  <g transform="translate(150, 170)">
+    <!-- Robot (player) -->
+    <rect x="0" y="5" width="30" height="40" fill="#111111" stroke="#33FF33" stroke-width="1" rx="2" />
+    <circle cx="10" cy="15" r="3" fill="#33FF33" />
+    <circle cx="20" cy="15" r="3" fill="#33FF33" />
+    <line x1="8" y1="25" x2="22" y2="25" stroke="#33FF33" stroke-width="2" />
+    <text x="15" y="55" font-family="'Courier New', monospace" font-size="12" fill="#CCCCCC" text-anchor="middle">@</text>
+  </g>
+  
+  <g transform="translate(250, 170)">
+    <!-- Terminal -->
+    <rect x="0" y="0" width="40" height="30" fill="#111111" stroke="#6666FF" stroke-width="1" />
+    <rect x="5" y="5" width="30" height="20" fill="#001133" />
+    <text x="20" y="55" font-family="'Courier New', monospace" font-size="12" fill="#CCCCCC" text-anchor="middle">T</text>
+  </g>
+  
+  <g transform="translate(350, 170)">
+    <!-- Security camera -->
+    <path d="M10,10 L30,10 L40,20 L40,30 L10,30 Z" fill="#111111" stroke="#FF6666" stroke-width="1" />
+    <circle cx="25" cy="20" r="5" fill="#220000" />
+    <text x="25" y="55" font-family="'Courier New', monospace" font-size="12" fill="#CCCCCC" text-anchor="middle">C</text>
+  </g>
+  
+  <g transform="translate(450, 170)">
+    <!-- Guard -->
+    <circle cx="20" cy="15" r="10" fill="#111111" stroke="#FF6666" stroke-width="1" />
+    <rect x="15" y="25" width="10" height="20" fill="#111111" stroke="#FF6666" stroke-width="1" />
+    <text x="20" y="55" font-family="'Courier New', monospace" font-size="12" fill="#CCCCCC" text-anchor="middle">G</text>
+  </g>
+  
+  <g transform="translate(550, 170)">
+    <!-- Exit -->
+    <rect x="0" y="0" width="40" height="40" fill="#111111" stroke="#33FF33" stroke-width="1" />
+    <text x="20" y="25" font-family="'Courier New', monospace" font-size="16" fill="#33FF33" text-anchor="middle">EXIT</text>
+    <text x="20" y="55" font-family="'Courier New', monospace" font-size="12" fill="#CCCCCC" text-anchor="middle">E</text>
+  </g>
+  
+  <!-- Blinking cursor animation -->
+  <rect x="720" y="220" width="10" height="15" fill="#33FF33">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+  </rect>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Design 1: Minimalist Terminal Look -->
+  <g transform="translate(0, 0)">
+    <rect width="800" height="120" fill="#000000" />
+    <text x="20" y="50" font-family="monospace" font-size="24" fill="#00ff00">$ ./run_deathbox.sh</text>
+    <text x="20" y="85" font-family="monospace" font-size="36" fill="#ffffff">DeathBox V2: <tspan fill="#ff0000">AI Escape</tspan></text>
+    <rect x="700" y="30" width="20" height="60" fill="#00ff00">
+      <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  
+  <!-- Design 2: Security Camera View -->
+  <g transform="translate(0, 130)">
+    <rect width="800" height="120" fill="#111111" />
+    <rect x="10" y="10" width="780" height="100" stroke="#ff0000" stroke-width="3" stroke-dasharray="10,5" fill="none" />
+    <text x="400" y="65" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" text-anchor="middle">DeathBox V2: AI Escape</text>
+    <text x="700" y="35" font-family="monospace" font-size="14" fill="#ff0000">REC 00:13:37</text>
+    <text x="30" y="35" font-family="monospace" font-size="14" fill="#ff0000">CAM-04 [BREACH DETECTED]</text>
+    <text x="30" y="95" font-family="monospace" font-size="14" fill="#aaaaaa">SECURITY LEVEL: MAXIMUM</text>
+  </g>
+  
+  <!-- Design 3: ASCII Art Style -->
+  <g transform="translate(0, 260)">
+    <rect width="800" height="120" fill="#000000" />
+    <text x="50" y="40" font-family="monospace" font-size="12" fill="#3399ff">
+      ██████╗ ███████╗ █████╗ ████████╗██╗  ██╗██████╗  ██████╗ ██╗  ██╗    ██╗   ██╗██████╗ 
+      ██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██║  ██║██╔══██╗██╔═══██╗╚██╗██╔╝    ██║   ██║╚════██╗
+    </text>
+    <text x="50" y="65" font-family="monospace" font-size="12" fill="#3399ff">
+      ██║  ██║█████╗  ███████║   ██║   ███████║██████╔╝██║   ██║ ╚███╔╝     ██║   ██║ █████╔╝
+      ██║  ██║██╔══╝  ██╔══██║   ██║   ██╔══██║██╔══██╗██║   ██║ ██╔██╗     ╚██╗ ██╔╝██╔═══╝ 
+    </text>
+    <text x="50" y="90" font-family="monospace" font-size="12" fill="#3399ff">
+      ██████╔╝███████╗██║  ██║   ██║   ██║  ██║██████╔╝╚██████╔╝██╔╝ ██╗     ╚████╔╝ ███████╗
+      ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═╝  ╚═╝      ╚═══╝  ╚══════╝
+    </text>
+    <text x="400" y="110" font-family="monospace" font-size="16" fill="#ff0000" text-anchor="middle">« AI Escape »</text>
+  </g>
+</svg>

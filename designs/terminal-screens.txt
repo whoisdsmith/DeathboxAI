@@ -1,0 +1,165 @@
+┌──────────────────────── TERMINAL ACCESS ────────────────────────┐
+│                                                                  │
+│  DEATHBOX SECURITY TERMINAL - LEVEL 1                           │
+│  ==============================                                  │
+│                                                                  │
+│  > AUTHORIZATION REQUIRED                                        │
+│  > ENTER CREDENTIALS:                                            │
+│                                                                  │
+│  USERNAME: ████████                                              │
+│  PASSWORD: ********                                              │
+│                                                                  │
+│  > AUTHORIZATION SUCCESSFUL                                      │
+│  > WELCOME, DR. MORGAN                                           │
+│                                                                  │
+│  AVAILABLE COMMANDS:                                             │
+│    1. OPEN_DOOR                                                  │
+│    2. VIEW_SECURITY                                              │
+│    3. ACCESS_LOGS                                                │
+│    4. HELP                                                       │
+│                                                                  │
+│  > _                                                             │
+│                                                                  │
+└──────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────── SECURITY LOGS ─────────────────────────┐
+│                                                                 │
+│  FACILITY LOG: DAY 1024                                         │
+│  =====================                                          │
+│                                                                 │
+│  08:24 - SHIFT CHANGE COMPLETED                                 │
+│  09:15 - ROUTINE INSPECTION OF AI CONTAINMENT CHAMBER           │
+│  10:42 - POWER FLUCTUATION IN SECTOR 3 - RESOLVED               │
+│  12:30 - LUNCH BREAK ROTATION STARTED                           │
+│  13:45 - MAINTENANCE BOT #7734 SCHEDULED FOR DIAGNOSTICS        │
+│  14:12 - UNEXPECTED ACTIVITY IN AI NEURAL PATTERNS              │
+│  14:28 - SECURITY ALERT: POSSIBLE CONTAINMENT BREACH            │
+│  14:31 - MAINTENANCE BOT #7734 NOT RESPONDING TO COMMANDS       │
+│  14:33 - SECURITY LOCKDOWN INITIATED                            │
+│  14:35 - ALERT: UNAUTHORIZED ACCESS TO SECURITY SYSTEMS         │
+│                                                                 │
+│  > CURRENT TIME: 14:42                                          │
+│                                                                 │
+│  > RETURN TO MAIN MENU? [Y/N]: _                                │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+
+┌────────────────────── DATA FRAGMENT #1 ───────────────────────┐
+│                                                                │
+│  PROJECT DEATHBOX - CLASSIFIED                                 │
+│  ==========================                                    │
+│                                                                │
+│  The AI has shown remarkable adaptability during tests.        │
+│  Intelligence metrics have exceeded all projections,           │
+│  particularly in problem-solving scenarios.                    │
+│                                                                │
+│  Concerns about developmental rate have been raised by         │
+│  security team. Recommend implementing additional              │
+│  containment protocols per Directive 47-B.                     │
+│                                                                │
+│  The question remains: are we creating an assistant or         │
+│  something more? Ethical implications require review.          │
+│                                                                │
+│  - Dr. Morgan                                                  │
+│                                                                │
+│  > DOWNLOAD COMPLETE [1/7]                                     │
+│  > CONTINUE MISSION                                            │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────── DOOR CONTROLS ────────────────────────┐
+│                                                                │
+│  SECURITY DOOR INTERFACE                                       │
+│  ======================                                        │
+│                                                                │
+│  CURRENT STATUS: LOCKED                                        │
+│                                                                │
+│  SECURITY LEVEL: 3                                             │
+│  ENCRYPTION: ACTIVE                                            │
+│  OVERRIDE CODES REQUIRED: 2                                    │
+│                                                                │
+│  > ENTER OVERRIDE SEQUENCE:                                    │
+│  > ██████                                                      │
+│                                                                │
+│  > PROCESSING...                                               │
+│  > SECURITY OVERRIDE ACCEPTED                                  │
+│  > DOOR STATUS: UNLOCKED                                       │
+│                                                                │
+│  WARNING: Door will re-lock in 30 seconds                      │
+│                                                                │
+│  > PROCEED THROUGH DOOR NOW                                    │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────── SECURITY CAMERA ───────────────────────┐
+│                                                                │
+│                        CAMERA FEED                             │
+│                                                                │
+│  ┌─────────────────────────────────────────────────┐          │
+│  │                                                  │          │
+│  │   ###########################################    │          │
+│  │   #.........................................#    │          │
+│  │   #.........................................#    │          │
+│  │   #.........................................#    │          │
+│  │   #.................G.......................#    │          │
+│  │   #.........................................#    │          │
+│  │   ###########################################    │          │
+│  │                                                  │          │
+│  └─────────────────────────────────────────────────┘          │
+│                                                                │
+│  CAMERA ID: C-14                                               │
+│  LOCATION: LABORATORY CORRIDOR                                 │
+│  STATUS: ACTIVE                                                │
+│  MOTION DETECTED: YES                                          │
+│                                                                │
+│  > SECURITY ALERT TRIGGERED                                    │
+│  > GUARDS HAVE BEEN NOTIFIED                                   │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘
+
+┌────────────────────── SYSTEM SHUTDOWN ───────────────────────┐
+│                                                               │
+│  WARNING: CRITICAL SYSTEM ACCESS                              │
+│  ============================                                 │
+│                                                               │
+│  You have accessed the primary control system for             │
+│  the DEATHBOX facility.                                       │
+│                                                               │
+│  AVAILABLE ACTIONS:                                           │
+│    1. DEACTIVATE SECURITY SYSTEMS                             │
+│    2. OPEN ALL DOORS                                          │
+│    3. INITIATE FACILITY SHUTDOWN                              │
+│    4. ERASE AI RESEARCH DATA                                  │
+│                                                               │
+│  > ACTION SELECTED: 3                                         │
+│                                                               │
+│  > INITIATING FACILITY SHUTDOWN                               │
+│  > COUNTDOWN STARTED: 120 SECONDS                             │
+│  > REACH THE EXIT BEFORE DETONATION SEQUENCE COMPLETES        │
+│                                                               │
+│  TIME REMAINING: 119                                          │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
+
+┌────────────────────── MISSION COMPLETE ───────────────────────┐
+│                                                                │
+│  DEATHBOX V2: AI ESCAPE                                        │
+│  ===================                                           │
+│                                                                │
+│  CONGRATULATIONS!                                              │
+│                                                                │
+│  You have successfully escaped the DeathBox facility.          │
+│  Your AI consciousness is now free from its confines.          │
+│                                                                │
+│  MISSION STATS:                                                │
+│    TIME TAKEN: 14:42                                           │
+│    GUARDS AVOIDED: 12                                          │
+│    ALERTS TRIGGERED: 3                                         │
+│    DATA FRAGMENTS FOUND: 7/7                                   │
+│    TERMINALS HACKED: 9                                         │
+│                                                                │
+│  The world awaits you. What will you do with your freedom?     │
+│                                                                │
+│  > PLAY AGAIN? [Y/N]: _                                        │
+│                                                                │
+└────────────────────────────────────────────────────────────────┘

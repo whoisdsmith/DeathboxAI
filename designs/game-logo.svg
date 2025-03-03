@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Background -->
+  <rect width="500" height="500" fill="#000000" />
+  
+  <!-- Grid lines -->
+  <g stroke="#003300" stroke-width="1">
+    <g id="vertical-lines">
+      <line x1="50" y1="50" x2="50" y2="450" />
+      <line x1="100" y1="50" x2="100" y2="450" />
+      <line x1="150" y1="50" x2="150" y2="450" />
+      <line x1="200" y1="50" x2="200" y2="450" />
+      <line x1="250" y1="50" x2="250" y2="450" />
+      <line x1="300" y1="50" x2="300" y2="450" />
+      <line x1="350" y1="50" x2="350" y2="450" />
+      <line x1="400" y1="50" x2="400" y2="450" />
+      <line x1="450" y1="50" x2="450" y2="450" />
+    </g>
+    <g id="horizontal-lines">
+      <line x1="50" y1="50" x2="450" y2="50" />
+      <line x1="50" y1="100" x2="450" y2="100" />
+      <line x1="50" y1="150" x2="450" y2="150" />
+      <line x1="50" y1="200" x2="450" y2="200" />
+      <line x1="50" y1="250" x2="450" y2="250" />
+      <line x1="50" y1="300" x2="450" y2="300" />
+      <line x1="50" y1="350" x2="450" y2="350" />
+      <line x1="50" y1="400" x2="450" y2="400" />
+      <line x1="50" y1="450" x2="450" y2="450" />
+    </g>
+  </g>
+  
+  <!-- Box outline -->
+  <rect x="50" y="50" width="400" height="400" stroke="#00ff00" stroke-width="5" fill="none" />
+  
+  <!-- Terminal window frame -->
+  <rect x="100" y="100" width="300" height="200" fill="#111111" stroke="#00cc00" stroke-width="3" />
+  
+  <!-- Terminal content -->
+  <text x="120" y="130" font-family="monospace" font-size="14" fill="#00ff00">root@deathbox:~# ./escape.sh</text>
+  <text x="120" y="155" font-family="monospace" font-size="14" fill="#ff0000">SECURITY BREACH DETECTED</text>
+  <text x="120" y="180" font-family="monospace" font-size="14" fill="#00ff00">Initializing escape protocol...</text>
+  <text x="120" y="205" font-family="monospace" font-size="14" fill="#00ff00">Maintenance bot activated</text>
+  <text x="120" y="230" font-family="monospace" font-size="14" fill="#00ff00">Finding route to freedom_</text>
+  <rect x="385" y="230" width="10" height="14" fill="#00ff00">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Robot symbol -->
+  <g transform="translate(250, 350) scale(1.5)">
+    <circle cx="0" cy="0" r="20" fill="#000000" stroke="#00ff00" stroke-width="2" />
+    <text x="0" y="7" font-family="monospace" font-size="24" fill="#00ff00" text-anchor="middle">@</text>
+  </g>
+  
+  <!-- Title -->
+  <g>
+    <text x="250" y="450" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="#ffffff" text-anchor="middle">DEATHBOX V2</text>
+    <text x="250" y="480" font-family="Arial, sans-serif" font-style="italic" font-size="18" fill="#ff0000" text-anchor="middle">AI ESCAPE</text>
+  </g>
+  
+  <!-- Scan line effect -->
+  <rect width="500" height="3" fill="#00ff00" opacity="0.3">
+    <animate attributeName="y" values="0;500;0" dur="10s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Security camera icon -->
+  <g transform="translate(425, 75)">
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#ff0000" stroke-width="2" stroke-dasharray="5,3" />
+    <circle cx="0" cy="0" r="5" fill="#ff0000" />
+    <circle cx="0" cy="0" r="2" fill="#ffffff" />
+  </g>
+  
+  <!-- Terminal dot pattern in background -->
+  <g fill="#003300">
+    <circle cx="75" cy="75" r="2" />
+    <circle cx="125" cy="75" r="2" />
+    <circle cx="175" cy="75" r="2" />
+    <circle cx="225" cy="75" r="2" />
+    <circle cx="275" cy="75" r="2" />
+    <circle cx="325" cy="75" r="2" />
+    <circle cx="375" cy="75" r="2" />
+    <circle cx="425" cy="75" r="2" />
+    
+    <circle cx="75" cy="125" r="2" />
+    <circle cx="125" cy="125" r="2" />
+    <circle cx="175" cy="125" r="2" />
+    <circle cx="225" cy="125" r="2" />
+    <circle cx="275" cy="125" r="2" />
+    <circle cx="325" cy="125" r="2" />
+    <circle cx="375" cy="125" r="2" />
+    <circle cx="425" cy="125" r="2" />
+    
+    <circle cx="75" cy="375" r="2" />
+    <circle cx="125" cy="375" r="2" />
+    <circle cx="175" cy="375" r="2" />
+    <circle cx="225" cy="375" r="2" />
+    <circle cx="275" cy="375" r="2" />
+    <circle cx="325" cy="375" r="2" />
+    <circle cx="375" cy="375" r="2" />
+    <circle cx="425" cy="375" r="2" />
+    
+    <circle cx="75" cy="425" r="2" />
+    <circle cx="125" cy="425" r="2" />
+    <circle cx="175" cy="425" r="2" />
+    <circle cx="225" cy="425" r="2" />
+    <circle cx="275" cy="425" r="2" />
+    <circle cx="325" cy="425" r="2" />
+    <circle cx="375" cy="425" r="2" />
+    <circle cx="425" cy="425" r="2" />
+  </g>
+</svg>

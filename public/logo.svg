@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#000000" />
+
+  <!-- Border -->
+  <rect x="2" y="2" width="28" height="28" stroke="#33ff33" stroke-width="2" fill="none" />
+
+  <!-- "DB" text -->
+  <text x="16" y="18" font-family="monospace" font-size="16" font-weight="bold" fill="#33ff33" text-anchor="middle" dominant-baseline="middle">DB</text>
+
+  <!-- Terminal-like details -->
+  <circle cx="8" cy="8" r="2" fill="#33ff33" />
+  <circle cx="24" cy="24" r="2" fill="#33ff33" />
+</svg>

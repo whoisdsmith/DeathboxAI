@@ -1,0 +1,170 @@
+:root {
+  --primary-color: #33ff33;
+  --secondary-color: #ff3333;
+  --background-color: #000000;
+  --terminal-background: #0c0c0c;
+  --text-color: #ffffff;
+  --terminal-text: #33ff33;
+  --terminal-border: #33ff33;
+  --guard-color: #ffff00;
+  --camera-color: #00ccff;
+  --door-color: #aa5500;
+  --exit-color: #ff0000;
+  --terminal-color: #ffffff;
+  --player-color: #33ff33;
+  --wall-color: #888888;
+  --empty-color: #aaaaaa;
+  --data-color: #ff00ff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Courier New', monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Terminal styling */
+.terminal {
+  background-color: var(--terminal-background);
+  border: 2px solid var(--terminal-border);
+  border-radius: 5px;
+  padding: 20px;
+  font-family: 'Courier New', monospace;
+  color: var(--terminal-text);
+  box-shadow: 0 0 10px rgba(51, 255, 51, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.terminal-title {
+  font-weight: bold;
+  color: #999;
+}
+
+.terminal-buttons {
+  display: flex;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.terminal-button-red {
+  background-color: #ff5f5f;
+}
+
+.terminal-button-yellow {
+  background-color: #ffbd2e;
+}
+
+.terminal-button-green {
+  background-color: #27c93f;
+}
+
+/* Scan line effect */
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgba(51, 255, 51, 0.3);
+  animation: scan 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  0% { top: 0; }
+  100% { top: 100%; }
+}
+
+/* Blinking cursor */
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background-color: var(--terminal-text);
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Game grid styling */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+  gap: 0;
+  font-family: 'Courier New', monospace;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.cell {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.player { color: var(--player-color); }
+.wall { color: var(--wall-color); }
+.empty { color: var(--empty-color); }
+.guard { color: var(--guard-color); }
+.camera { color: var(--camera-color); }
+.door { color: var(--door-color); }
+.terminal { color: var(--terminal-color); }
+.exit { color: var(--exit-color); }
+.data { color: var(--data-color); }
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .game-grid {
+    grid-template-columns: repeat(auto-fill, minmax(16px, 1fr));
+  }
+
+  .cell {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-grid {
+    grid-template-columns: repeat(auto-fill, minmax(12px, 1fr));
+  }
+
+  .cell {
+    font-size: 12px;
+  }
+}

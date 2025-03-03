@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844">
+  <!-- iPhone Frame -->
+  <rect width="390" height="844" rx="45" ry="45" fill="#111111" stroke="#333333" stroke-width="2" />
+  
+  <!-- Screen Content -->
+  <rect x="10" y="10" width="370" height="824" rx="35" ry="35" fill="#000000" />
+  
+  <!-- Status Bar -->
+  <rect x="10" y="10" width="370" height="30" rx="10" ry="10" fill="#000000" stroke="#333333" stroke-width="1" />
+  <text x="30" y="30" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">9:41 AM</text>
+  <text x="350" y="30" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="end">100%</text>
+  
+  <!-- a-Shell Header -->
+  <rect x="10" y="40" width="370" height="40" fill="#222222" />
+  <text x="20" y="65" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">a-Shell</text>
+  <circle cx="350" cy="60" r="12" fill="none" stroke="#ffffff" stroke-width="1.5" />
+  <text x="350" y="65" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">+</text>
+  
+  <!-- Game Title Area -->
+  <rect x="10" y="80" width="370" height="40" fill="#000000" />
+  <text x="195" y="105" font-family="monospace" font-size="18" fill="#00ff00" text-anchor="middle">DEATHBOX V2: AI ESCAPE</text>
+  
+  <!-- Game Screen Area -->
+  <rect x="20" y="130" width="350" height="500" fill="#000000" stroke="#00ff00" stroke-width="1" />
+  
+  <!-- Game Map Display -->
+  <g transform="translate(30, 140)">
+    <!-- Map grid -->
+    <g font-family="monospace" font-size="16" text-anchor="middle">
+      <!-- First row -->
+      <text x="10" y="20" fill="#888888">#</text>
+      <text x="30" y="20" fill="#888888">#</text>
+      <text x="50" y="20" fill="#888888">#</text>
+      <text x="70" y="20" fill="#888888">#</text>
+      <text x="

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DeathBox Asset Converter</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #33ff33;
+            font-family: monospace;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2 {
+            color: #33ff33;
+        }
+
+        img {
+            border: 1px solid #33ff33;
+            margin: 10px;
+            background-color: #111;
+        }
+
+        .instructions {
+            background-color: #111;
+            padding: 15px;
+            border: 1px solid #33ff33;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #000;
+            color: #33ff33;
+            border: 1px solid #33ff33;
+            padding: 10px 20px;
+            font-family: monospace;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #33ff33;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DeathBox Asset Converter</h1>
+
+    <div class="instructions">
+        <p>This page converts base64-encoded images to actual image files.</p>
+        <p>Click the buttons below to download the images.</p>
+    </div>
+
+    <h2>Logo (32x32)</h2>
+    <img id="logoImg" width="32" height="32" alt="Logo">
+    <br>
+    <button onclick="downloadLogo()">Download Logo (PNG)</button>
+
+    <h2>Favicon (16x16)</h2>
+    <img id="faviconImg" width="16" height="16" alt="Favicon">
+    <br>
+    <button onclick="downloadFavicon()">Download Favicon (PNG)</button>
+    <button onclick="downloadFaviconIco()">Download Favicon (ICO)</button>
+
+    <script>
+        // Base64 data for the images
+        const logoBase64 = "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5gMDEBkRFcVxvQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAADOUlEQVRYw8WXS2hTQRSGv5nkJk1jbBptbXzUB1J8gOBCRQQRBDeCCxERXLhwIbgQcSEiIm5cuBBxISIiIiIiIoJYqQtRqCJWqa+qVVtrmyZNmtwkN+NClOaRm6QJzVkN3Dtz5vz/nTNnzggRRvnCvgSQBrLABiADpIAEIAEF8IAq8BX4DHwAioAb5VwRBJAGdgF7gR1ANsT8OvAaeA48BR6HBSlfOAFsBw4DB4EFITf+n3wEngD3gGdhQMoXTgKngBPAYgYvZeAucAMoBIGUL5wCzgLHGb6UgVvAVaAUBHIcuAAsZ/TkAteB80DNDzIGXALWMPpSBs4BN/0gKeAqsJGxkzfAUWDKC5ICbgPrGHt5DhwBKl6QW8BGxl6eAQe9IFeALYy9PAL2e0HOAtsYe7kP7FVADtjP2MsDoKCAvcAixl4eAjsUsBNIMPbyGNiugK1EnDgCqQJvgVfAF6AGNIEE0Ai0AcuANcBSYEEIkGfAFgWsIKLUgSrwDrgP3AEKhCjJyhcWwBZgP3AEWDUAyEtgvQJWEkHqQBG4ClwGvg0yufKFBeQYcBZYHRCkCKxSwOoBJ68Bd4A7wLdBQXwgGeBkAMgHYJkCMgNMWgZuApeBz1FA/EAWAaeB4z7DZQUsHmDCe8B54MMwIP+BJIGLPu1aAYsGmOwScHXYEA9IGrjkGbIVkBxgkqvAlWFDPCBNwDnPUFIBjQNMcgm4NmyIB6QBOOMZihOiJPtAzjMCiAdE+gzFCFdCrwLXRwXiA4kRroZrCiiHnKAMXBg1iA9IGbgZZoIvwPlRg/iAlIAbYSZ4D5wbNYgPSAm4FmaCN8CpUYP4gHwCLoaZ4BVwZNQgPiDvgQthJngO7Bk1iA/IU+BsmAmeADtGDeID8hDYFWaCe8C2UYP4gNwFtoSZ4BawcdQgPiDXgXVhJrgBrB01iA/IZWBVmAkuAStGDeIDcgFYGmaCc0B61CA+IGeAVJgJTgOJUYP4gJwCzDAT7GN0Uh8EZAcwxdhLfRCQTYy91AcBWQe8YOylHgSyFHjK2Et9EJAYcBx4x9hJGTgINPwFYpRWNYVo/WIAAAAASUVORK5CYII=";
+
+        const faviconBase64 = "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5gMDEBwxOz4+VgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABfklEQVQ4y6WTvUtCURjGf+fea2pFRA1Bg9TQEg0JhkNDEEFDNDgFQUtDtDQ0NNRQ9Ac0NTQ0NDQ0NNRQ1GC0GBE1RBDRB5GZpXW/3NOgXvVecxM9cDgv7/Oc33vOeV8FRZQs2jFgCpgEUkAcCAEKsAHqwCfwBrwCZUBXOVcUAYwDC8A8MO5z/gZ4Bp6AR6DmBySLdgJYBJaBrJ+D/6gKPAK3QMkPSBbtNLAGrAIZhqcGcAvcAGU/YAVYByYYnT6ADWBXGkgBW8AsxtcncA/cAe9AE/CAMBABxoAskAdywIjP+RWgIA1sA/OMplfgHLgCvvs5SRbtELAEHAGzPcAecCINHAIFRqMn4Bi47HdICrLAKXDQA+wDe9LAHrDI8FQCjoAHvwNdQA44B/JdwC6wIw1sAhsMTxfAKVD1c9AFjAOnXcA2sCUNrAPrDEcnwDlQ6+egCxgDLrqAArApDawBawxOh8AVUPdz0AOMAgfAB/9HdWAZCP0A/c6JhRjkYfgAAAAASUVORK5CYII=";
+
+        // Set the images
+        document.getElementById('logoImg').src = 'data:image/png;base64,' + logoBase64;
+        document.getElementById('faviconImg').src = 'data:image/png;base64,' + faviconBase64;
+
+        // Download functions
+        function downloadLogo() {
+            const link = document.createElement('a');
+            link.download = 'logo.png';
+            link.href = 'data:image/png;base64,' + logoBase64;
+            link.click();
+        }
+
+        function downloadFavicon() {
+            const link = document.createElement('a');
+            link.download = 'favicon.png';
+            link.href = 'data:image/png;base64,' + faviconBase64;
+            link.click();
+        }
+
+        function downloadFaviconIco() {
+            const link = document.createElement('a');
+            link.download = 'favicon.ico';
+            link.href = 'data:image/png;base64,' + faviconBase64;
+            link.click();
+            alert('Note: This is still a PNG file with .ico extension. For a proper ICO file, you may need to use an image converter tool.');
+        }
+    </script>
+</body>
+
+</html>

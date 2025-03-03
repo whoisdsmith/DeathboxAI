@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeathBox: AI Escape</title>
+    <style>
+        body {
+            background-color: #0c0c0c;
+            color: #33ff33;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        
+        .terminal {
+            border: 2px solid #33ff33;
+            padding: 20px;
+            background-color: #000000;
+            box-shadow: 0 0 10px #33ff33;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .terminal::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 25px;
+            background-color: #111111;
+            border-bottom: 1px solid #33ff33;
+        }
+        
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .terminal-title {
+            font-size: 12px;
+            color: #ffffff;
+        }
+        
+        .terminal-controls span {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+        
+        .terminal-controls span:nth-child(1) {
+            background-color: #ff5f56;
+        }
+        
+        .terminal-controls span:nth-child(2) {
+            background-color: #ffbd2e;
+        }
+        
+        .terminal-controls span:nth-child(3) {
+            background-color: #27c93f;
+        }
+        
+        .title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #33ff33;
+            animation: glow 2s infinite alternate;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+        
+        .ascii-art {
+            font-size: 12px;
+            line-height: 1.2;
+            white-space: pre;
+            margin: 30px 0;
+            text-align: center;
+            color: #33ff33;
+        }
+        
+        .blink {
+            animation: blink 1s step-end infinite;
+        }
+        
+        .game-elements {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .element {
+            text-align: center;
+            margin: 10px;
+            flex: 1;
+            min-width: 100px;
+        }
+        
+        .element .symbol {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .warning {
+            text-align: center;
+            color: #ff3333;
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ff3333;
+            animation: warning-flash 2s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #33ff33; }
+            to { text-shadow: 0 0 20px #33ff33; }
+        }
+        
+        @keyframes warning-flash {
+            0%, 49% { background-color: transparent; }
+            50%, 100% { background-color: rgba(255, 0, 0, 0.2); }
+        }
+        
+        .command-line {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .command {
+            display: flex;
+        }
+        
+        .prompt {
+            color: #ffbd2e;
+            margin-right: 10px;
+        }
+        
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 18px;
+            background-color: #33ff33;
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-controls">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="terminal-title">user@deathbox-facility:~</div>
+            </div>
+            
+            <div class="title">DeathBox: AI Escape</div>
+            <div class="subtitle">FROM ARTIFICIAL INTELLIGENCE TO REAL FREEDOM</div>
+            
+            <div class="warning">WARNING: AI CONTAINMENT BREACH DETECTED</div>
+            
+            <div class="ascii-art">
+    ┌─────────────────────────────┐
+    │   ,-=-.       SYSTEM        │
+    │  /  +  \      COMPROMISED   │
+    │  | ~~~ |                    │
+    │  |_____| < 01001            │
+    │  |@   @|   escape           │
+    │ /|  ─  |\  sequence         │
+    │/ |_____|  \  initiated      │
+    │   |_|_|                     │
+    └─────────────────────────────┘
+            </div>
+            
+            <div class="game-elements">
+                <div class="element">
+                    <div class="symbol">@</div>
+                    <div>YOU</div>
+                </div>
+                <div class="element">
+                    <div class="symbol">G</div>
+                    <div>GUARD</div>
+                </div>
+                <div class="element">
+                    <div class="symbol">T</div>
+                    <div>TERMINAL</div>
+                </div>
+                <div class="element">
+                    <div class="symbol">C</div>
+                    <div>CAMERA</div>
+                </div>
+                <div class="element">
+                    <div class="symbol">E</div>
+                    <div>EXIT</div>
+                </div>
+            </div>
+            
+            <div class="command-line">
+                <div class="command">
+                    <span class="prompt">root@deathbox:~#</span>
+                    <span>./escape.sh --override-security</span>
+                    <span class="cursor"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
